@@ -1,0 +1,59 @@
+.rb-row {
+    display: flex;
+    flex-direction: row;
+    padding-top : 3em;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.rb-container {
+    display: flex;
+    flex-direction: column;
+}
+.rb-div-primary {
+    border : 2px solid gray;
+    transform: rotate(2deg);
+    box-shadow: 13px 6px #ddd;
+    border-radius: 7px;
+}
+.rb-div-primary:hover {
+    transform: rotate(-1deg);
+}
+.rb-picture {
+    height: auto;
+    width :200px;
+}
+
+.rb-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color : #393a3c;
+    text-decoration: none;
+}
+.rb-bio {
+    margin-left : 2em;
+    border: 2px solid gray;
+    background-color: #faf8fa;
+    padding : 2em;
+    border-radius: 7px;
+    box-shadow: 13px 15px #ddd;
+    color:#393a3c;;
+}
+.rb-bio:hover {
+    transform: rotate(-1deg);
+}
+.rb-name-contact {
+    padding:1em;
+}
+@media only screen and (max-width: 600px) {
+    .rb-row {
+        flex-direction : column;
+    }
+    .rb-div-primary {
+        justify-content: center;
+    }
+
+}

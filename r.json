@@ -1,0 +1,47 @@
+{
+    "person" : {
+        "name" : "Vinayak V Iyer",
+        "picture" : "path to picture",
+        "bio" : "some random gibberish",
+        "education"  :[{
+            "institution" : "B.Sc Computer Science, University of Mumbai",
+            "year"        : "2015",
+            "grade"       : "6/7"
+        },
+        {
+            "institution" : "HSC , Maharashtra Board",
+            "year"        : "2012",
+            "grade"       : "60.17%"
+        }
+        ],
+        "work" : [{
+            "Capgemini" : {"joinDate"      : "July 2015",
+                            "endDate"      : "July 2016",
+                            "designation"   : "Systems Associate",
+                            "summary"       : "Assisted in design and development of a custom application with custom tables and automated reporting to measure productivity of agents. • Developed scripts for creating bulk incident tickets, each unique, ondevelopment instances to showcase reporting capabilities for pre sales client demos. • Developed and Deployed over 30 enhancements in the first 2 months."
+                            },
+            "Trikon Electronics" : {
+                            "joinDate"      : "",
+                            "endDate"       : "",
+                            "designation"   : "Software Programmer",
+                            "summary"       : "• Worked on Multiple technologies from websites powered by c/c++ , perl to apache httpd. Administered servers hosting more than 90 Businesses. • Made enhancements to OwnMail - email service for business, based on top of sendmail. • Conducted feasibility study for NextCloud integration with existing cloud based storage offerings. • Also had a brief stint with Asterisk IVR programming, and text to speech modules"
+                            },
+            "TheHouseMonk"      : {
+                            "joinDate"      : "",
+                            "endDate"       : "",
+                            "designation"   : "Business Development Executive",
+                            "summary"       : "Took the initiative to set up a knowledge base on renato for the SaaS tools that the company offered. Trained clients on how to use the tool and also worked closely with the developers to give them proper business requirements."
+                            },
+            "Meti M2M"          : {
+
+                                },
+            "Meti M2M"          : {
+
+                                },
+            "Pragati Tech Services" : {
+
+                                }
+            
+        }]
+    }
+}
