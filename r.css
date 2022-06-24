@@ -84,6 +84,7 @@ a {
     border-radius: 7px;
     box-shadow: 13px 15px #ddd;
     color:#393a3c;
+    margin-bottom:  1.618em;
 }
 .rb-experience-item:hover {
     transform: rotate(-1deg);
@@ -112,3 +113,6 @@ a {
 .rb-education-item:hover {
     transform: rotate(-1deg);
 }
+details summary::-webkit-details-marker {
+    display:none;
+  }
