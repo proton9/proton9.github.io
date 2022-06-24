@@ -40,7 +40,7 @@ a {
     padding : 2em;
     border-radius: 7px;
     box-shadow: 13px 15px #ddd;
-    color:#393a3c;;
+    color:#393a3c;
 }
 .rb-bio:hover {
     transform: rotate(-1deg);
@@ -54,6 +54,61 @@ a {
     }
     .rb-div-primary {
         justify-content: center;
+        width: 200px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1em;    
+    }
+    .rb-bio {
+        margin-left: unset;
     }
 
+}
+
+.rb-experience-container {
+    width: 80%;
+    text-align: left;
+    border : 2px solid gray;
+    background-color: #faf8fa;
+    padding : 1em;
+    border-radius: 7px;
+    box-shadow: 13px 15px #ddd;
+    color:#393a3c;
+}
+
+.rb-experience-item {
+    border : 2px solid gray;
+    background-color: #faf8ff;
+    padding : 1em;
+    border-radius: 7px;
+    box-shadow: 13px 15px #ddd;
+    color:#393a3c;
+}
+.rb-experience-item:hover {
+    transform: rotate(-1deg);
+}
+
+.rb-education-container {
+    width: 80%;
+    text-align: left;
+    border : 2px solid gray;
+    background-color: #faf8fa;
+    padding : 1em;
+    border-radius: 7px;
+    box-shadow: 13px 15px #ddd;
+    color:#393a3c;
+}
+
+.rb-education-item {
+    border : 2px solid gray;
+    background-color: #faf8ff;
+    padding : 1em;
+    border-radius: 7px;
+    box-shadow: 13px 15px #ddd;
+    color:#393a3c;
+}
+
+.rb-education-item:hover {
+    transform: rotate(-1deg);
 }
