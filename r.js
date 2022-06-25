@@ -1,76 +1,114 @@
 //minimalist js injector?!
 //var rAll = fetch("./r.json");
+window.addEventListener('load', function (data){
+    fetch('./r.json')
+    .then(response => response.json())
+    .then(data => {
+            main(data);
+        })
+    .catch (error => console.log (error));
 
-// fetch('./r.json')
-//     .then(response => response.json())
-//     .then(data => {
-//                       const rAll = data;
-//                       workDetials (data);
-//                     })
-//     .catch (error => console.log (error));
+})
+
 
 function workDetials (experienceArray) {
-   // console.log (rAll);
-    var we = experienceArray.work;
+    var we = experienceArray;
+    we.reverse();
 
     console.log (we.length)
-    var exps = [];
+    var experienceArray = [];
     for (let i = 0; i< we.length; i++) {
-        exps[i] = document.createElement("div");
-        exps[i].classList.add('rb-experience-item');
-        exps[i].append (createDetails (we[i][0]));
+        experienceArray[i] = document.createElement("div");
+        experienceArray[i].classList.add('rb-experience-item');
+        experienceArray[i].append (createWorkDetails (we[i][0]));
     }
     var expcon = document.getElementById('rbexpcon');
-    console.log (exps);
-    for (let j = 0 ; j < exps.length ; j++) {
-        expcon.appendChild(exps[j]);
+    for (let j = 0 ; j < experienceArray.length ; j++) {
+        expcon.appendChild(experienceArray[j]);
     }
 
-//    console.log (exps);
+//    console.log (experienceArray);
 }
 
-function createDetails (detailsItem) {
+function createWorkDetails (item) {
     var details = document.createElement("details");
-    var summary = document.createElement("summary");
-    summary.innerHTML = detailsItem.company;
-    var specifics = document.createElement ("div");
-    specifics.innerHTML = detailsItem.summary;
+   
+   
+    var designation = document.createElement ("div");
+    designation.innerHTML = item.designation ;
+    designation.style.fontWeight = "bold";
 
-    details.append(summary);
+    var summary = document.createElement("summary");
+    summary.style.padding = "1em";
+    summary.innerHTML = item.company + '&nbsp;--&nbsp' +'<b>'+item.designation+'</b>';
+
+    var specifics = document.createElement ("div");
+    specifics.style.padding = ".7em";
+    specifics.innerHTML = item.summary;
+    
+    var duration = item.joinDate + " - " + item.endDate;
+    var workedFor = document.createElement ("div");
+    workedFor.style.padding = ".7em";
+    workedFor.innerHTML = duration;
+
+    details.append (summary);
+    
+    details.append (workedFor);
     details.append (specifics);
-    console.log (details);
+
     return details;
 
 }
 
-function main () {
-    var wjson = {"work" : [
-                            [{
-                                "company"       : "Capgemini",
-                                "joinDate"      : "July 2015",
-                                "endDate"       : "July 2016",
-                                "designation"   : "Systems Associate",
-                                "summary"       : "Assisted in design and development of a custom application with custom tables and automated reporting to measure productivity of agents. Developed scripts for creating bulk incident tickets, each unique, ondevelopment instances to showcase reporting capabilities for pre sales client demos. Developed and Deployed over 30 enhancements in the first 2 months."
-                            }],
-                            [{
-                                "company"       : "Trikon Electronics",
-                                "joinDate"      : "",
-                                "endDate"       : "",
-                                "designation"   : "Software Programmer",
-                                "summary"       : "Worked on Multiple technologies from websites powered by c/c++ , perl to apache httpd. Administered servers hosting more than 90 Businesses.  Made enhancements to OwnMail - email service for business, based on top of sendmail. Conducted feasibility study for NextCloud integration with existing cloud based storage offerings. Also had a brief stint with Asterisk IVR programming, and text to speech modules"
-                            }],
-                            [{
-                                "company"       : "TheHouseMonk",
-                                "joinDate"      : "",
-                                "endDate"       : "",
-                                "designation"   : "Business Development Executive",
-                                "summary"       : "Took the initiative to set up a knowledge base on renato for the SaaS tools that the company offered. Trained clients on how to use the tool and also worked closely with the developers to give them proper business requirements."
-                            }]
-                ]
-            };
-        workDetials (wjson);
+function educationDetails (education) {
+    console.log (education);
+    var educationArray = []
+    for (let i = 0; i< education.length; i++) {
+        educationArray[i] = document.createElement ("div");
+        educationArray[i].classList.add("rb-education-item");
+        educationArray[i].append (createEducationDetails (education[i][0]) );
+    }
+    
+    var educationContainer = document.getElementById("rbeducon"); 
+    for (let j = 0 ; j < educationArray.length; j++) {
+        educationContainer.appendChild (educationArray[j]);
+    }
+
 }
 
-window.addEventListener('load', (event) => {
-    main();
-  });
+function createEducationDetails (item) {
+    var details = document.createElement("details");
+
+    var summary = document.createElement("summary");
+    summary.style.padding = "1em";
+    summary.innerHTML = item.institution;
+
+    var specifics = document.createElement ("div");
+    specifics.style.padding = ".7em";
+    specifics.innerHTML = item.grade;
+    
+    var passoutYear = document.createElement ("div");
+    passoutYear.style.padding = ".7em";
+    passoutYear.innerHTML = item.year;
+
+    details.append (summary);
+    details.append (passoutYear);
+    details.append (specifics);
+
+    return details;
+
+}
+
+function bio (bio) {
+    console.log (bio);
+    var domBio = document.getElementById ('rbbio');
+    domBio.innerHTML = bio;
+}
+
+function main (data) {
+    workDetials(data.person.work);
+    educationDetails (data.person.education);
+    //bio (data.person.bio);
+
+}
+

@@ -2,46 +2,70 @@
     "person" : {
         "name" : "Vinayak V Iyer",
         "picture" : "path to picture",
-        "bio" : "some random gibberish",
-        "education"  :[{
-            "institution" : "B.Sc Computer Science, University of Mumbai",
-            "year"        : "2015",
-            "grade"       : "6/7"
-        },
-        {
-            "institution" : "HSC , Maharashtra Board",
-            "year"        : "2012",
-            "grade"       : "60.17%"
-        }
+        "bio" : "A jack of all trades with ability to get started with any sort of technology. \n programming - https://github.com/proton9 \n art - https://www.deviantart.com/proton9 \n react+dota project - https://dota2progress.herokuapp.com",
+        "education"  :[
+                        [{
+                            "institution" : "B.Sc Computer Science, University of Mumbai",
+                            "year"        : "2015",
+                            "grade"       : "CGPA 6/7 - College Topper"
+                        }],
+                        [{
+                            "institution" : "HSC (Higher Secondary) , Maharashtra Board",
+                            "year"        : "2012",
+                            "grade"       : "60.17%"
+                        }],
+                        [
+                            {
+                                "institution"   : "SSC, Maharashtra Board",
+                                "year"          : "2010",
+                                "grade"         : "65.66"
+                            }
+                        ]
         ],
-        "work" : [{
-            "Capgemini" : {"joinDate"      : "July 2015",
-                            "endDate"      : "July 2016",
-                            "designation"   : "Systems Associate",
-                            "summary"       : "Assisted in design and development of a custom application with custom tables and automated reporting to measure productivity of agents. • Developed scripts for creating bulk incident tickets, each unique, ondevelopment instances to showcase reporting capabilities for pre sales client demos. • Developed and Deployed over 30 enhancements in the first 2 months."
-                            },
-            "Trikon Electronics" : {
-                            "joinDate"      : "",
-                            "endDate"       : "",
-                            "designation"   : "Software Programmer",
-                            "summary"       : "• Worked on Multiple technologies from websites powered by c/c++ , perl to apache httpd. Administered servers hosting more than 90 Businesses. • Made enhancements to OwnMail - email service for business, based on top of sendmail. • Conducted feasibility study for NextCloud integration with existing cloud based storage offerings. • Also had a brief stint with Asterisk IVR programming, and text to speech modules"
-                            },
-            "TheHouseMonk"      : {
-                            "joinDate"      : "",
-                            "endDate"       : "",
-                            "designation"   : "Business Development Executive",
-                            "summary"       : "Took the initiative to set up a knowledge base on renato for the SaaS tools that the company offered. Trained clients on how to use the tool and also worked closely with the developers to give them proper business requirements."
-                            },
-            "Meti M2M"          : {
+        "work" : [
+                    [{
+                        "company"       : "Capgemini",
+                        "joinDate"      : "July 2015",
+                        "endDate"       : "July 2016",
+                        "designation"   : "Systems Associate",
+                        "summary"       : "Assisted in design and development of a custom application with custom tables and automated reporting to measure productivity of agents. Developed scripts for creating bulk incident tickets, each unique, ondevelopment instances to showcase reporting capabilities for pre sales client demos. Developed and Deployed over 30 enhancements in the first 2 months."
+                    }],
+                    [{
+                        "company"       : "Trikon Electronics",
+                        "joinDate"      : "August 2017",
+                        "endDate"       : "November 2017",
+                        "designation"   : "Software Programmer",
+                        "summary"       : "Worked on Multiple technologies from websites powered by c/c++ , perl to apache httpd. Administered servers hosting more than 90 Businesses.  Made enhancements to OwnMail - email service for business, based on top of sendmail. Conducted feasibility study for NextCloud integration with existing cloud based storage offerings. Also had a brief stint with Asterisk IVR programming, and text to speech modules"
+                    }],
+                    [{
+                        "company"       : "TheHouseMonk",
+                        "joinDate"      : "January 2018",
+                        "endDate"       : "April 2018",
+                        "designation"   : "Business Development Executive",
+                        "summary"       : "Took the initiative to set up a knowledge base on renato for the SaaS tools that the company offered. Trained clients on how to use the tool and also worked closely with the developers to give them proper business requirements."
+                    }],
+                    [{
+                        "company"       : "Meti M2M",
+                        "joinDate"      : "May 2018",
+                        "endDate"       : "October 2018",
+                        "designation"   : "Software Engineer",
+                        "summary"       : "Worked on the entire LAMP stack. Designed a basic SPA architecture for an existing n-tier SaaS Production Monitoring application, using existing frameworks and Jquery. Played a part in APIs written for the same application. Helped the team adapt an object oriented approach to JS used in views. Set up a few reports. Maintained 2 repositories on production. Also managed the mariaDB instance hosted on google cloud along with the debian vms. Benchmarked performance differences between NodeJs and apache over similar workloads."
+                    }],
+                    [{
+                        "company"       : "Meti M2M",
+                        "joinDate"      : "January 2020",
+                        "endDate"       : "September 2020",
+                        "designation"   : "Software Consultant",
+                        "summary"       : "Primarily Worked on remaking old components on react and also creating new visualisations for different factory equipment. Setup testing environment. Worked on creating new php based microservice apis. Created javascript modules for existing systems."
+                    }],
+                    [{
+                        "company"       : "Pragati Tech Services",
+                        "joinDate"      : "February 2022",
+                        "endDate"       : "Present",
+                        "designation"   : "Technology Manager - Individual Contrubutor",
+                        "summary"       : "Php and javascript developer along with html5 and css on linux"
 
-                                },
-            "Meti M2M"          : {
-
-                                },
-            "Pragati Tech Services" : {
-
-                                }
-            
-        }]
+                    }]
+            ]
     }
 }

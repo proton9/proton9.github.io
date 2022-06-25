@@ -15,6 +15,7 @@
     transform: rotate(2deg);
     box-shadow: 13px 6px #ddd;
     border-radius: 7px;
+    transition: ease .5s .2s;
 }
 .rb-div-primary:hover {
     transform: rotate(-1deg);
@@ -41,6 +42,7 @@ a {
     border-radius: 7px;
     box-shadow: 13px 15px #ddd;
     color:#393a3c;
+    transition: ease .5s .2s;
 }
 .rb-bio:hover {
     transform: rotate(-1deg);
@@ -80,14 +82,17 @@ a {
 .rb-experience-item {
     border : 2px solid gray;
     background-color: #faf8ff;
-    padding : 1em;
     border-radius: 7px;
     box-shadow: 13px 15px #ddd;
     color:#393a3c;
     margin-bottom:  1.618em;
+    width :85%;
+    transition:  ease-in .5s .1s;
 }
 .rb-experience-item:hover {
+    width: 100%;
     transform: rotate(-1deg);
+
 }
 
 .rb-education-container {
@@ -104,15 +109,53 @@ a {
 .rb-education-item {
     border : 2px solid gray;
     background-color: #faf8ff;
+    border-radius: 7px;
+    box-shadow: 13px 15px #ddd;
+    color:#393a3c;
+    margin-bottom:  1.618em;
+    width : 80%;
+    transition: ease-in .5s .1s;
+}
+
+.rb-education-item:hover {
+    width : 100%;
+    transform: rotate(1deg);
+}
+details summary::-webkit-details-marker {
+    display:none;
+}
+.rb-skills-container {
+    width: 80%;
+    text-align: left;
+    border : 2px solid gray;
+    background-color: #faf8fa;
     padding : 1em;
     border-radius: 7px;
     box-shadow: 13px 15px #ddd;
     color:#393a3c;
 }
-
-.rb-education-item:hover {
-    transform: rotate(-1deg);
+.rb-skills{
+    display: flex;
+    flex-direction: row;
 }
-details summary::-webkit-details-marker {
-    display:none;
-  }
+.rb-html {
+    width : 30%;
+    background-color: orange;
+}
+.rb-css {
+    width :25%;
+    background-color: greenyellow;
+}
+.rb-programming {
+    width: 45%;
+    background-color: darkslateblue;
+}
+a {
+    color : rgb(0, 1, 63);
+}
+
+.rb-s {
+    height: 2em;
+    border : 1px #393a3c;
+    color : white;
+}
