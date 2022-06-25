@@ -152,6 +152,7 @@ details summary::-webkit-details-marker {
 }
 a {
     color : rgb(0, 1, 63);
+    word-break: break-word;
 }
 
 .rb-s {
