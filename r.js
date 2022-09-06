@@ -7,19 +7,31 @@ window.addEventListener('load', function (data){
             main(data);
         })
     .catch (error => console.log (error));
-
+    
+    var l33t = document.getElementById ("rb-programming");
+    l33t.addEventListener('click', function(e) {
+        var rev = reverseWord (e.target.innerHTML);
+        l33t.innerHTML=rev;
+    })
 })
 
+function reverseWord (word) {
+    var str = '';
+    for (let i = word.length-1 ; i >= 0 ; i--) {
+        str += word[i];
+    }
+    return str;
+}
 
 function workDetials (experienceArray) {
     var we = experienceArray;
     we.reverse();
 
-    console.log (we.length)
     var experienceArray = [];
     for (let i = 0; i< we.length; i++) {
         experienceArray[i] = document.createElement("div");
         experienceArray[i].classList.add('rb-experience-item');
+        experienceArray[i].classList.add("rb-shadow");
         experienceArray[i].append (createWorkDetails (we[i][0]));
     }
     var expcon = document.getElementById('rbexpcon');
@@ -61,11 +73,11 @@ function createWorkDetails (item) {
 }
 
 function educationDetails (education) {
-    console.log (education);
     var educationArray = []
     for (let i = 0; i< education.length; i++) {
         educationArray[i] = document.createElement ("div");
         educationArray[i].classList.add("rb-education-item");
+        educationArray[i].classList.add("rb-shadow"); 
         educationArray[i].append (createEducationDetails (education[i][0]) );
     }
     
@@ -100,7 +112,6 @@ function createEducationDetails (item) {
 }
 
 function bio (bio) {
-    console.log (bio);
     var domBio = document.getElementById ('rbbio');
     domBio.innerHTML = bio;
 }

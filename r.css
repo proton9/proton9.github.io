@@ -13,12 +13,14 @@
 .rb-div-primary {
     border : 2px solid gray;
     transform: rotate(2deg);
-    box-shadow: 13px 6px #ddd;
+    box-shadow: 0 0 5px 7px #c7c7c7;
     border-radius: 7px;
     transition: ease .5s .2s;
 }
+    
 .rb-div-primary:hover {
     transform: rotate(-1deg);
+    box-shadow: 0 0 10px 15px #ECEFF1;
 }
 .rb-picture {
     height: auto;
@@ -40,15 +42,23 @@ a {
     background-color: #faf8fa;
     padding : 2em;
     border-radius: 7px;
-    box-shadow: 13px 15px #ddd;
     color:#393a3c;
     transition: ease .5s .2s;
 }
 .rb-bio:hover {
     transform: rotate(-1deg);
+    box-shadow: 0 0 10px 15px #ECEFF1;
 }
 .rb-name-contact {
+    text-align: center;
     padding:1em;
+}
+.rb-contact {
+    border : 2px dotted #607D8B;
+    text-align: center;
+}
+.rb-contact > a {
+    text-decoration: underline;
 }
 @media only screen and (max-width: 600px) {
     .rb-row {
@@ -75,7 +85,6 @@ a {
     background-color: #faf8fa;
     padding : 1em;
     border-radius: 7px;
-    box-shadow: 13px 15px #ddd;
     color:#393a3c;
 }
 
@@ -92,7 +101,7 @@ a {
 .rb-experience-item:hover {
     width: 100%;
     transform: rotate(-1deg);
-
+    box-shadow: 0 0 10px 15px #ECEFF1;
 }
 
 .rb-education-container {
@@ -102,7 +111,6 @@ a {
     background-color: #faf8fa;
     padding : 1em;
     border-radius: 7px;
-    box-shadow: 13px 15px #ddd;
     color:#393a3c;
 }
 
@@ -110,7 +118,6 @@ a {
     border : 2px solid gray;
     background-color: #faf8ff;
     border-radius: 7px;
-    box-shadow: 13px 15px #ddd;
     color:#393a3c;
     margin-bottom:  1.618em;
     width : 80%;
@@ -120,6 +127,7 @@ a {
 .rb-education-item:hover {
     width : 100%;
     transform: rotate(1deg);
+    box-shadow: 0 0 10px 15px #ECEFF1;
 }
 details summary::-webkit-details-marker {
     display:none;
@@ -131,7 +139,6 @@ details summary::-webkit-details-marker {
     background-color: #faf8fa;
     padding : 1em;
     border-radius: 7px;
-    box-shadow: 13px 15px #ddd;
     color:#393a3c;
 }
 .rb-skills{
@@ -140,11 +147,12 @@ details summary::-webkit-details-marker {
 }
 .rb-html {
     width : 30%;
-    background-color: orange;
+    font-weight:800;
+    font-size: larger;
 }
 .rb-css {
     width :25%;
-    background-color: greenyellow;
+    background: linear-gradient(45deg,#AEEA00,#17c6dd);
 }
 .rb-programming {
     width: 45%;
@@ -159,4 +167,45 @@ a {
     height: 2em;
     border : 1px #393a3c;
     color : white;
+}
+
+.rb-bio-headline {
+    margin-bottom : .3em;
+}
+.rb-bio-headline > a {
+    color :#6397ff;
+}
+
+.rb-shadow {
+    box-shadow: 0 0 5px 7px #B0BEC5;
+}
+.rb-container-shadow {
+    box-shadow: 0 0 5px 7px #607D8B;
+}
+.rb-div-spacer {
+    margin-bottom: .7em;
+}
+
+.rb-r {
+    color: #D50000;
+}
+.rb-g {
+    color: #1B5E20;
+}
+.rb-b {
+    color: #2962FF;
+}
+.rb-y {
+    color : #FFD600
+}
+.rb-super-imposed {
+    z-index:100;
+    background-color:#455A64;
+    color:white;
+    margin-top:-2.8em;
+    width: max-content;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
 }
