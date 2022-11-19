@@ -61,10 +61,17 @@
                     [{
                         "company"       : "Pragati Tech Services",
                         "joinDate"      : "February 2022",
-                        "endDate"       : "Present",
+                        "endDate"       : "November 2022",
                         "designation"   : "Technology Manager - Individual Contributor",
                         "summary"       : "Php and javascript developer along with html5 and css on linux"
 
+                    }],
+                    [{
+                        "company"       : "Billtrace Infotech",
+                        "joinDate"      : "November 2022",
+                        "endDate"       : "Present",
+                        "designation"   : "Backend Developer",
+                        "summary"       : "Making Laravel based systems for web and APIs"
                     }]
             ]
     }
