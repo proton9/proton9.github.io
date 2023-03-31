@@ -69,9 +69,17 @@
                     [{
                         "company"       : "Billtrace Infotech",
                         "joinDate"      : "November 2022",
-                        "endDate"       : "Present",
+                        "endDate"       : "January 2023",
                         "designation"   : "Backend Developer",
                         "summary"       : "Making Laravel based systems for web and APIs"
+                    }],
+                    [{
+                        "company"       : "FynTune Solutions",
+                        "joinDate"      : "February 2023",
+                        "endDate"       : "Present",
+                        "designation"   : "Software Engineer",
+                        "summary"       : "Working on Laravel based systems in the Insurance/Healtchare domain"
+
                     }]
             ]
     }
