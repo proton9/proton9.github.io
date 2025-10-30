@@ -10,7 +10,7 @@
                             "grade"       : "CGPA 6/7 - College Topper"
                         }],
                         [{
-                            "institution" : "HSC (Higher Secondary) , Maharashtra Board",
+                            "institution" : "HSC (Higher Secondary), Maharashtra Board",
                             "year"        : "2012",
                             "grade"       : "60.17%"
                         }],
@@ -77,9 +77,8 @@
                         "company"       : "FynTune Solutions",
                         "joinDate"      : "February 2023",
                         "endDate"       : "Present",
-                        "designation"   : "Senior Software Engineer",
+                        "designation"   : "Associate Lead Engineer",
                         "summary"       : "Working on Laravel based systems in the Insurance/Healtchare domain"
-
                     }]
             ]
     }
