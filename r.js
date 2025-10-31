@@ -8,11 +8,11 @@ window.addEventListener('load', function (data){
         })
     .catch (error => console.log (error));
     
-    var l33t = document.getElementById ("rb-programming");
-    l33t.addEventListener('click', function(e) {
-        var rev = reverseWord (e.target.innerHTML);
-        l33t.innerHTML=rev;
-    })
+    // var l33t = document.getElementById ("rb-programming");
+    // l33t.addEventListener('click', function(e) {
+    //     var rev = reverseWord (e.target.innerHTML);
+    //     l33t.innerHTML=rev;
+    // })
 })
 
 function reverseWord (word) {
@@ -119,7 +119,57 @@ function bio (bio) {
 function main (data) {
     workDetials(data.person.work);
     educationDetails (data.person.education);
+    addSkills(data.person.skills);
     //bio (data.person.bio);
+}
 
+function addSkills(skills) {
+    console.log(skills);
+    var skillsTable = document.getElementById("rb-skills-tbody");
+
+    for (let i = 0; i < skills.length; i++) {
+        var skill = skills[i];
+        var row = document.createElement("tr");
+        var title = document.createElement("td");
+        title.innerHTML = skill.skill;
+        var proficiency = document.createElement("td");
+        var wrapper = document.createElement('div');
+        wrapper.classList.add("progress-wrapper");
+        var bar = document.createElement('progress');
+        bar.classList.add("progress-bar");
+        bar.max = "100";
+        bar.value = skill.proficiency;
+        wrapper.appendChild(bar);
+        proficiency.appendChild(wrapper);
+        row.appendChild(title);
+        row.appendChild(proficiency);
+        skillsTable.appendChild(row);
+    }
+    //     <tr>
+    //     <td>
+    //         php
+    //     </td>
+    //     <td>
+    //         <div class="progress-wrapper">
+    //             <progress class="progress-bar" value="80" max="100"></progress>
+    //         </div>
+    //     </td>
+    // </tr>
+    // <tr>
+    //     <td>
+    //         mysql
+    //     </td>
+    //     <td>
+    //         <progress value="60" max="100"></progress>
+    //     </td>
+    // </tr>
+    // <tr>
+    //     <td>
+    //         linux
+    //     </td>
+    //     <td>
+    //         <progress value="80" max="100"></progress>
+    //     </td>
+    // </tr>
 }
 

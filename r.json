@@ -80,6 +80,49 @@
                         "designation"   : "Associate Lead Engineer",
                         "summary"       : "Working on Laravel based systems in the Insurance/Healtchare domain"
                     }]
-            ]
+            ],
+
+        "skills" : [
+            {
+                "skill" : "PHP",
+                "proficiency" : 80
+            },
+            {
+                "skill" : "Laravel",
+                "proficiency" : 90
+            },
+            {
+                "skill" : "MySQL",
+                "proficiency" : 70
+            },
+            {
+                "skill" : "PostgreSQL",
+                "proficiency" : 60
+            },
+            {
+                "skill" : "Linux",
+                "proficiency" : 60
+            },
+            {
+                "skill" : "Git",
+                "proficiency" : 40
+            },
+            {
+                "skill" : "Javascript",
+                "proficiency" : 35
+            },
+            {
+                "skill" : "System Design",
+                "proficiency" : 80
+            },
+            {
+                "skill" : "C++",
+                "proficiency" : 25
+            },
+            {
+                "skill" : "Python",
+                "proficiency" : 15
+            }
+        ]
     }
 }
