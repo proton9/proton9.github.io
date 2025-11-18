@@ -251,3 +251,16 @@ td {
 .rb-si {
     padding: .33em;
 }
+
+.blog-placeholder {
+    text-align: right;
+    float : right;
+    background-color:#455A64;
+    color:white;
+    width: max-content;
+    border-top-left-radius: .3em;
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    padding: 1em;
+}
