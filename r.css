@@ -253,8 +253,8 @@ td {
 }
 
 .blog-placeholder {
-    text-align: right;
-    float : right;
+    /* text-align: right;
+    float : right; */
     background-color:#455A64;
     color:white;
     width: max-content;
